@@ -10,20 +10,18 @@ export default function Hero() {
         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop'
     ];
 
-    const mainImageUrl = 'https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=1600&auto=format&fit=crop';
-
     const galleryStripImages = [
-        'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=100',
-        'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=100',
-        'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=100',
+        'https://i.ibb.co/B5vywxpb/generation3.jpg',
+        'https://i.ibb.co/zTWZ6xm6/generation1.jpg',
+        'https://i.ibb.co/1YRGXFHC/generation2.jpg',
     ];
 
     const trustedLogosText = [
-        'Startups',
-        'Scale-ups',
-        'Founders',
-        'Global teams',
-        'Creative brands'
+        'Adobe',
+        'Figma',
+        'Canva',
+        'Shopify',
+        'Webflow'
     ];
 
     return (
@@ -51,7 +49,7 @@ export default function Hero() {
                                     ))}
                                 </div>
                                 <span className="text-xs text-gray-200/90">
-                                    Trusted by brands & founders worldwide
+                                    Trusted by 10,000+ creators, marketers
                                 </span>
                             </motion.a>
 
@@ -61,9 +59,9 @@ export default function Hero() {
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.1 }}
                             >
-                                We design & build <br />
+                                Create viral UGC <br />
                                 <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-300 to-indigo-400">
-                                    high-impact digital experiences
+                                    in seconds
                                 </span>
                             </motion.h1>
 
@@ -73,8 +71,8 @@ export default function Hero() {
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.2 }}
                             >
-                                A creative digital agency helping startups and businesses grow through
-                                thoughtful design, scalable development and performance-driven strategy.
+                                Upload your product photos and model images, then let Promova transform them into engaging UGC-style photos and short videos. 
+                                Create realistic, attention-grabbing content without complicated production.
                             </motion.p>
 
                             <motion.div className="flex flex-col sm:flex-row items-center gap-4 mb-8"
@@ -85,14 +83,14 @@ export default function Hero() {
                             >
                                 <a href="/" className="w-full sm:w-auto">
                                     <PrimaryButton className="max-sm:w-full py-3 px-7">
-                                        Start your project
+                                        Start generating - it's free
                                         <ArrowRightIcon className="size-4" />
                                     </PrimaryButton>
                                 </a>
 
                                 <GhostButton className="max-sm:w-full max-sm:justify-center py-3 px-5">
                                     <PlayIcon className="size-4" />
-                                    View our work
+                                    Watch demo
                                 </GhostButton>
                             </motion.div>
 
@@ -105,9 +103,9 @@ export default function Hero() {
                                 <div className="flex items-center gap-2 p-2 px-3 sm:px-6.5 hover:bg-white/3 transition-colors">
                                     <ZapIcon className="size-4 text-sky-500" />
                                     <div>
-                                        <div>Strategy-led execution</div>
+                                        <div>Seconds to create</div>
                                         <div className="text-xs text-gray-400">
-                                            Focused on growth & results
+                                            Optimized social formats
                                         </div>
                                     </div>
                                 </div>
@@ -117,9 +115,9 @@ export default function Hero() {
                                 <div className="flex items-center gap-2 p-2 px-3 sm:px-6.5 hover:bg-white/3 transition-colors">
                                     <CheckIcon className="size-4 text-cyan-500" />
                                     <div>
-                                        <div>Full-service delivery</div>
+                                        <div>Commercial rights</div>
                                         <div className="text-xs text-gray-400">
-                                            Design, dev & marketing
+                                            Use anywhere, no fuss
                                         </div>
                                     </div>
                                 </div>
@@ -136,25 +134,25 @@ export default function Hero() {
                             <motion.div className="rounded-3xl overflow-hidden border border-white/6 shadow-2xl bg-linear-to-b from-black/50 to-transparent">
                                 <div className="relative aspect-16/10 bg-gray-900">
                                     <img
-                                        src={mainImageUrl}
+                                        src="/Hero_Main.png"
                                         alt="agency-work-preview"
                                         className="w-full h-full object-cover object-center"
                                     />
 
                                     <div className="absolute left-4 top-4 px-3 py-1 rounded-full bg-black/15 backdrop-blur-sm text-xs">
-                                        Branding • Web • Growth
+                                        Social Ready • 9:16 & 16:9
                                     </div>
 
                                     <div className="absolute right-4 bottom-4">
                                         <button className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-white/6 backdrop-blur-sm hover:bg-white/10 transition focus:outline-none">
                                             <PlayIcon className="size-4" />
-                                            <span className="text-xs">See case study</span>
+                                            <span className="text-xs">Preview</span>
                                         </button>
                                     </div>
                                 </div>
                             </motion.div>
 
-                            <div className="mt-4 flex gap-3 items-center justify-start">
+                            <div className="mt-4 flex gap-2 items-center justify-start">
                                 {galleryStripImages.map((src, i) => (
                                     <motion.div
                                         key={i}
@@ -162,7 +160,7 @@ export default function Hero() {
                                         whileInView={{ y: 0, opacity: 1 }}
                                         viewport={{ once: true }}
                                         transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.1 + i * 0.1 }}
-                                        className="w-14 h-10 rounded-lg overflow-hidden border border-white/6"
+                                        className="w-6 h-10 rounded-md overflow-hidden border border-white/6"
                                     >
                                         <img
                                             src={src}
@@ -182,7 +180,7 @@ export default function Hero() {
 
                                         <span className="relative inline-flex size-2 rounded-full bg-green-600" />
                                     </div>
-                                    20+ completed projects
+                                    +20 more
                                 </motion.div>
                             </div>
                         </motion.div>

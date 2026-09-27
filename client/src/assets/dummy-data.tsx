@@ -1,111 +1,130 @@
-import { UploadIcon, VideoIcon, ZapIcon } from 'lucide-react';
+import {
+    UploadIcon,
+    VideoIcon,
+    SparklesIcon,
+} from 'lucide-react';
 
 export const featuresData = [
     {
         icon: <UploadIcon className="w-6 h-6" />,
-        title: 'Discovery & Planning',
-        desc: 'We understand your goals, audience and challenges to craft a clear, actionable strategy.'
+        title: 'Upload Your Images',
+        desc: 'Upload your product photos and model images as the starting point for your UGC content.'
     },
     {
-        icon: <ZapIcon className="w-6 h-6" />,
-        title: 'Design & Development',
-        desc: 'High-quality design and scalable development focused on performance and usability.'
+        icon: <SparklesIcon className="w-6 h-6" />,
+        title: 'AI-Powered UGC',
+        desc: 'Transform your uploaded images into engaging, realistic UGC-style content with AI.'
     },
     {
         icon: <VideoIcon className="w-6 h-6" />,
-        title: 'Launch & Growth',
-        desc: 'We launch, optimize and continuously improve to drive measurable business growth.'
+        title: 'Photo & Video Ads',
+        desc: 'Generate UGC-style photos and short-form video ads ready for your marketing campaigns.'
     }
 ];
 
 export const plansData = [
     {
-        id: 'starter',
-        name: 'Starter',
-        price: '$499',
-        desc: 'Best for early-stage startups.',
-        credits: 'One-time',
+        id: 'free',
+        name: 'Free',
+        price: '$0',
+        desc: 'Explore AI-powered UGC creation.',
+        credits: '10 credits / month',
         features: [
-            'Project discovery & planning',
-            'UI/UX design',
-            'Basic website development',
-            '1 revision round',
-            'Email support'
+            '10 monthly credits',
+            'Product image uploads',
+            'Model image uploads',
+            'AI UGC photo generation',
+            'Basic video generation',
+            'Standard generation speed'
         ]
     },
     {
         id: 'pro',
-        name: 'Growth',
-        price: '$1,499',
-        desc: 'Growing teams and businesses.',
-        credits: 'Monthly',
+        name: 'Pro',
+        price: '$19',
+        desc: 'For creators and growing brands.',
+        credits: '100 credits / month',
         features: [
-            'Everything in Starter',
-            'Advanced UI/UX design',
-            'Custom development',
-            'Performance optimization',
-            'Priority support'
+            '100 monthly credits',
+            'Product image uploads',
+            'Model image uploads',
+            'AI UGC photo generation',
+            'AI UGC video generation',
+            'Higher generation quality',
+            'Faster generation speed',
+            'No watermark'
         ],
         popular: true
     },
     {
-        id: 'ultra',
-        name: 'Scale',
-        price: '$3,999',
-        desc: 'For brands ready to scale fast.',
-        credits: 'Custom',
+        id: 'business',
+        name: 'Business',
+        price: '$49',
+        desc: 'For brands creating UGC at scale.',
+        credits: '500 credits / month',
         features: [
-            'Everything in Growth',
-            'Dedicated project manager',
-            'Ongoing optimization',
-            'Marketing & growth support',
-            'Chat + Email support'
+            '500 monthly credits',
+            'Everything in Pro',
+            'High-volume UGC generation',
+            'Premium generation quality',
+            'Priority generation',
+            'Multiple campaign creation',
+            'Commercial usage',
+            'Priority support'
         ]
     }
 ];
 
 export const faqData = [
     {
-        question: 'What services does your agency provide?',
-        answer: 'We offer end-to-end digital services including brand strategy, UI/UX design, web and app development and growth-focused marketing solutions.'
+        question: 'What is Promova?',
+        answer: 'Promova is an AI-powered UGC content generator that transforms product photos and model images into engaging UGC-style photos and short videos.'
     },
     {
-        question: 'Do you work with startups or only large companies?',
-        answer: 'We work with startups, growing businesses and established brands. Our process is flexible and tailored to match your goals and scale.'
+        question: 'What can I create with Promova?',
+        answer: 'You can create UGC-style product photos and short-form video ads using your uploaded product and model images.'
     },
     {
-        question: 'How long does a typical project take?',
-        answer: 'Project timelines vary by scope, but most projects take between 2–6 weeks. We provide a clear timeline after the discovery phase.'
+        question: 'How does the UGC generation process work?',
+        answer: 'Upload your product photo and model image, choose the type of content you want to create, and let Promova generate your UGC-style photo or video.'
     },
     {
-        question: 'Do you offer ongoing support after launch?',
-        answer: 'Yes. We offer maintenance, optimization and growth support packages to ensure your product continues to perform and evolve.'
+        question: 'What are credits used for?',
+        answer: 'Credits are used to generate AI-powered UGC content. Different generations may use different amounts of credits depending on the selected content type and generation settings.'
+    },
+    {
+        question: 'Can I use the generated content for advertising?',
+        answer: 'Yes. Pro and Business plans are designed for brands and creators who want to use generated UGC content in their marketing and advertising campaigns.'
+    },
+    {
+        question: 'Can I upgrade my plan later?',
+        answer: 'Yes. You can upgrade your Promova plan as your content generation needs grow.'
     }
 ];
 
 export const footerLinks = [
     {
-        title: "Company",
+        title: 'Quick Links',
         links: [
-            { name: "Home", url: "#" },
-            { name: "Services", url: "#" },
-            { name: "Work", url: "#" },
-            { name: "Contact", url: "#" }
+            { name: 'Home', url: '#' },
+            { name: 'Features', url: '#' },
+            { name: 'Pricing', url: '#' },
+            { name: 'How It Works', url: '#' }
         ]
     },
     {
-        title: "Legal",
+        title: 'Legal',
         links: [
-            { name: "Privacy Policy", url: "#" },
-            { name: "Terms of Service", url: "#" }
+            { name: 'Privacy Policy', url: '#' },
+            { name: 'Terms of Service', url: '#' }
         ]
     },
     {
-        title: "Connect",
+        title: 'Connect',
         links: [
-            { name: "Twitter", url: "#" },
-            { name: "LinkedIn", url: "#" },
-            { name: "GitHub", url: "#" }
+            { name: 'X / Twitter', url: '#' },
+            { name: 'Instagram', url: '#' },
+            { name: 'GitHub', url: '#' }
         ]
     }
 ];

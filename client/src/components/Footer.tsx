@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { footerLinks } from '../assets/dummy-data';
 import { motion } from 'framer-motion';
 
@@ -13,9 +14,9 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-white/10">
                     <div>
-                        <img src='/logo.svg' alt="logo" className="h-8" />
+                        <img src='/promova-logo.png' alt="logo" className="h-8" />
                         <p className="max-w-[410px] mt-6 text-sm leading-relaxed">
-                            We are a digital agency focused on strategy, design and development—helping brands build meaningful digital experiences and grow sustainably.
+                            We help ambitious brands turn ideas into powerful digital experiences through strategy, creative design, and modern technology—built to engage audiences, drive growth, and create lasting impact.
                         </p>
                     </div>
 
@@ -46,9 +47,9 @@ export default function Footer() {
 
                 <p className="py-4 text-center text-sm text-gray-400">
                     © {new Date().getFullYear()} {' '}
-                    <a href="https://prebuiltui.com/tailwind-templates?ref=pixel-forge">
-                        PrebuiltUI
-                    </a>
+                    <Link to={"/"} onClick={() => window.scrollTo(0, 0)} className="hover:text-gray-300 transition">
+                        Promova
+                    </Link>
                     . All rights reserved.
                 </p>
             </div>
