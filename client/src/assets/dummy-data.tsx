@@ -104,7 +104,7 @@ export const faqData = [
 
 export const footerLinks = [
     {
-        title: 'Product',
+        title: 'Quick Links',
         links: [
             { name: 'Home', url: '#' },
             { name: 'Features', url: '#' },
